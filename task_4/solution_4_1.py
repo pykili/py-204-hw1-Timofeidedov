@@ -14,9 +14,9 @@ while n<=10:
     while a[j]!='\t':
         j=j+1
     j=j+1
-    while i!='\t' or j!='\t':
+    while a[i]!='\t' and a[j]!='\t':
       form=form+a[i]
-      lemma=lemma+a[j]#он выдает тут string index out of range, я пока не могу понять почему, поэтому временно оставил так
+      lemma=lemma+a[j]
       i=i+1
       j=j+1
     if form!=lemma:
