@@ -1,6 +1,29 @@
-# your code here
-for smth in 'a'*10:
-    user_input = input()
-    # your code here
-    if my_cool_condition == True:
-        print(form, lemma)
+n=0
+while n<=10:
+  a=input()
+  n=n+1
+  i=0
+  j=0
+  form=''
+  lemma=''
+  if a[0] != '#' and a[0] != ' ':
+    while a[i]!='\t':
+        i=i+1
+    i=i+1
+    j=i
+    while a[j]!='\t':
+        j=j+1
+    j=j+1
+    while a[j]!='\t':
+      lemma=lemma+a[j]
+      j=j+1
+    form1=lemma
+    c=len(lemma)+i
+    while a[i]!='\t':
+      form=form+a[i]
+      if i>c-1:
+        form1=form1+a[i]
+      i=i+1
+    if form!=lemma and form1!=form :
+      print (form)
+      print (lemma)
