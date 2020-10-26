@@ -1,13 +1,9 @@
-a=input()
-i=0
-i1=len(a)-1
-b=0
-while i<i1:
-  if a[i]!=a[i1] :
-    b=b+1
-  i=i+1
-  i1=i1-1
-if b==0:
+my_string=input()
+palindrom=''
+n=0
+for my_char in my_string:
+  palindrom=my_char+palindrom
+if my_string==palindrom:
   print('YES')
 else:
   print('NO')
