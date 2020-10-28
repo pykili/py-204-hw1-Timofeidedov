@@ -14,11 +14,12 @@ while n<=10:
     while a[j]!='\t':
         j=j+1
     j=j+1
-    while a[i]!='\t' and a[j]!='\t':
-      form=form+a[i]
+    while a[j]!='\t':
       lemma=lemma+a[j]
-      i=i+1
       j=j+1
+    while a[i]!='\t':
+      form=form+a[i]
+      i=i+1
     if form!=lemma:
       print (form)
       print (lemma)
