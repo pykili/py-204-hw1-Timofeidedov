@@ -40,5 +40,5 @@ while n<10:
         x=x+1
       else: 
         y=y+1
-print('Следует'+str(x)+'раз')
-print('Не следует'+str(y)+'раз')
+print('Следует'+str(x)+' раз')
+print('Не следует'+str(y)+' раз')
